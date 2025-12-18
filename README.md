@@ -1,29 +1,40 @@
-# Comparación de Programación Tradicional y POO en Python
+# Ejemplos del Mundo Real – Programación Orientada a Objetos (POO)
 
-## Objetivo
-Desarrollar un programa en Python que permita calcular el promedio semanal del clima,
-aplicando dos enfoques de programación: Programación Tradicional y Programación
-Orientada a Objetos (POO).
+## Descripción general
+En esta carpeta se presentan dos programas desarrollados en Python que aplican los
+principios de la Programación Orientada a Objetos (POO) mediante ejemplos sencillos
+del mundo real. Cada ejemplo utiliza clases, atributos y métodos para modelar
+situaciones cotidianas de forma clara y ordenada.
 
-## Archivos del proyecto
+---
 
-- **clima_tradicional.py**  
-  Implementa la solución utilizando funciones para ingresar las temperaturas diarias
-  y calcular el promedio semanal del clima.
+## Ejemplo 1: Sistema de Reservas de Cancha
+Este programa simula un sistema básico de reservas de una cancha deportiva.
+Se utilizan las clases Cliente, Cancha y Reserva para representar a los actores
+principales del proceso.
 
-- **clima_poo.py**  
-  Implementa la solución utilizando Programación Orientada a Objetos, aplicando
-  encapsulamiento y herencia para representar y organizar los datos del clima.
+El sistema muestra los horarios disponibles y permite al usuario ingresar una hora.
+Si el horario no está disponible, el programa solicita nuevamente la hora hasta
+que se realice una reserva válida.
 
-## Comparación entre ambos enfoques
-La programación tradicional organiza el programa mediante funciones y el uso de listas,
-lo que permite una solución simple y fácil de entender para problemas pequeños.
-Por otro lado, la Programación Orientada a Objetos estructura el programa a través de
-clases y métodos, lo que mejora la organización del código y facilita su mantenimiento
-y ampliación.
+Archivo: `reservas_cancha.py`
+
+---
+
+## Ejemplo 2: Tienda Simple (Venta de Arroz por Quintales)
+Este programa representa una tienda sencilla donde se vende arroz por quintales.
+Cada unidad corresponde a un quintal, con un precio establecido por unidad.
+
+Se utilizan las clases Producto y Carrito para gestionar el stock, realizar la compra
+y calcular el total a pagar. El sistema solicita la cantidad de quintales a comprar y,
+si no existe suficiente stock, permite reintentar hasta completar una compra válida.
+
+Archivo: `tienda_simple.py`
+
+---
 
 ## Conclusión
-Ambos enfoques permiten obtener el promedio semanal del clima correctamente; sin embargo,
-la Programación Orientada a Objetos ofrece una estructura más clara y ordenada
-cuando el programa crece.
-
+Los ejemplos desarrollados permiten evidenciar cómo la Programación Orientada a Objetos
+facilita la organización del código, la representación de situaciones reales y el
+control del flujo del programa. El uso de clases y métodos hace que los programas
+sean más claros, reutilizables y fáciles de mantener.
