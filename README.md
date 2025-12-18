@@ -8,7 +8,7 @@ situaciones cotidianas de forma clara y ordenada.
 
 ---
 
-## Ejemplo 1: Sistema de Reservas de Cancha
+## Ejemplo 1: Sistema de Reservas de  una Cancha
 Este programa simula un sistema básico de reservas de una cancha deportiva.
 Se utilizan las clases Cliente, Cancha y Reserva para representar a los actores
 principales del proceso.
