@@ -1,40 +1,71 @@
-# Ejemplos del Mundo Real – Programación Orientada a Objetos (POO)
+# Sistema de Préstamo de Equipos Electrónicos  
+Programación Orientada a Objetos (POO) – Python
 
-## Descripción general
-En esta carpeta se presentan dos programas desarrollados en Python que aplican los
-principios de la Programación Orientada a Objetos (POO) mediante ejemplos sencillos
-del mundo real. Cada ejemplo utiliza clases, atributos y métodos para modelar
-situaciones cotidianas de forma clara y ordenada.
+## Descripción general  
+En esta carpeta se presenta un programa desarrollado en Python que aplica los
+principios de la Programación Orientada a Objetos (POO) mediante un ejemplo del
+mundo real: un sistema de préstamo de equipos electrónicos.
 
----
-
-## Ejemplo 1: Sistema de Reservas de  una Cancha
-Este programa simula un sistema básico de reservas de una cancha deportiva.
-Se utilizan las clases Cliente, Cancha y Reserva para representar a los actores
-principales del proceso.
-
-El sistema muestra los horarios disponibles y permite al usuario ingresar una hora.
-Si el horario no está disponible, el programa solicita nuevamente la hora hasta
-que se realice una reserva válida.
-
-Archivo: `reservas_cancha.py`
+Este programa simula cómo una institución puede registrar usuarios, administrar
+equipos y controlar su préstamo y devolución de manera ordenada y comprensible.
 
 ---
 
-## Ejemplo 2: Tienda Simple (Venta de Arroz por Quintales)
-Este programa representa una tienda sencilla donde se vende arroz por quintales.
-Cada unidad corresponde a un quintal, con un precio establecido por unidad.
+## Estructura del proyecto  
+El proyecto fue organizado en carpetas para facilitar la lectura y el orden del
+código:
 
-Se utilizan las clases Producto y Carrito para gestionar el stock, realizar la compra
-y calcular el total a pagar. El sistema solicita la cantidad de quintales a comprar y,
-si no existe suficiente stock, permite reintentar hasta completar una compra válida.
+- **modelos/**
+  - `equipo.py`: contiene la clase `Equipo`, que representa los equipos electrónicos
+    disponibles para préstamo.
+  - `usuario.py`: contiene la clase `Usuario`, que representa a las personas que
+    solicitan los equipos.
+- **servicios/**
+  - `inventario.py`: se encarga de gestionar el inventario y controlar el préstamo
+    y la devolución de los equipos.
+- **main.py**
+  - Archivo principal donde se ejecuta el programa y se muestra el menú interactivo.
 
-Archivo: `tienda_simple.py`
+Esta organización permite separar responsabilidades y hace que el programa sea más
+fácil de entender y mantener.
 
 ---
 
-## Conclusión
-Los ejemplos desarrollados permiten evidenciar cómo la Programación Orientada a Objetos
-facilita la organización del código, la representación de situaciones reales y el
-control del flujo del programa. El uso de clases y métodos hace que los programas
-sean más claros, reutilizables y fáciles de mantener.
+## Funcionamiento del programa  
+Al iniciar el programa, se solicita al usuario ingresar su nombre y su número de
+cédula.  
+Posteriormente, se muestra un menú con las siguientes opciones:
+
+1. Prestar equipo  
+2. Devolver equipo  
+3. Salir  
+
+El inventario contiene equipos electrónicos identificados por un nombre y un
+código único.  
+Cuando el usuario selecciona la opción de préstamo, el sistema verifica si el
+equipo está disponible. Si lo está, se registra el préstamo correctamente; caso
+contrario, se informa que el equipo ya se encuentra prestado.
+
+En la opción de devolución, el sistema permite cambiar el estado del equipo para
+que vuelva a estar disponible.  
+El menú se repite hasta que el usuario decide salir del programa.
+
+---
+
+## Conceptos de Programación Orientada a Objetos aplicados  
+En este proyecto se aplican los siguientes conceptos de POO:
+
+- **Clases y objetos**: se utilizan las clases `Equipo`, `Usuario` e `Inventario`.
+- **Encapsulamiento**: cada clase gestiona sus propios atributos y métodos.
+- **Interacción entre objetos**: los usuarios interactúan con los equipos a través
+  del inventario.
+- **Modularidad**: el código se encuentra dividido en módulos para una mejor
+  organización.
+
+---
+
+## Conclusión  
+Este sistema de préstamo de equipos electrónicos demuestra cómo la Programación
+Orientada a Objetos nos permite modelar situaciones reales de forma clara y ordenada.
+La estructura utilizada facilita el aprendizaje y muestra una aplicación práctica
+de POO.
