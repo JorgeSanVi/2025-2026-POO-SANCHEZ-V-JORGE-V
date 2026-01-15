@@ -1,8 +1,6 @@
-# modelos/cuenta.py
-
 class Cuenta:
-    # Esta es la CLASE BASE (padre). De aquí heredarán otras cuentas.
-    # Encapsulación: el saldo se protege usando __saldo (no se modifica directo).
+    # Clase base (padre). De aquí heredan otras cuentas.
+    # Encapsulación: el saldo se protege con __saldo (atributo privado).
 
     def __init__(self, titular: str, numero: str, saldo_inicial: float = 0.0):
         # Atributos públicos
@@ -12,12 +10,12 @@ class Cuenta:
         # Atributo privado (encapsulado)
         self.__saldo = 0.0
 
-        # Uso un método para mantener el control del saldo desde el inicio
+        # Mantengo control del saldo desde el inicio usando un método
         self.depositar(saldo_inicial)
 
     @property
     def saldo(self) -> float:
-        # Yo permito consultar el saldo, pero no modificarlo directamente.
+        # Permito consultar el saldo, pero no modificarlo directamente.
         return self.__saldo
 
     def depositar(self, monto: float) -> None:
@@ -35,8 +33,7 @@ class Cuenta:
         self.__saldo -= monto
 
     def calcular_costo_mensual(self) -> float:
-        # Este método se usa para POLIMORFISMO:
-        # otras clases lo van a sobrescribir con su propia forma de calcular el costo.
+        # Polimorfismo: las clases derivadas sobrescriben este método.
         return 0.0
 
     def __str__(self) -> str:
