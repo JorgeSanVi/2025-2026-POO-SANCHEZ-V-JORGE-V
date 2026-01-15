@@ -5,8 +5,8 @@ from servicios.banco_servicios import BancoServicio
 
 banco = BancoServicio()
 
-ahorro = CuentaAhorro(titular="Jorge Sanchez", numero="001", saldo_inicial=1000.0, tasa_interes=0.03)
-corriente = CuentaCorriente(titular="Mishell Sarango", numero="002", saldo_inicial=800.0, costo_mantenimiento=2.50)
+ahorro = CuentaAhorro(titular="Jorge V. Sanchez V.", numero="001", saldo_inicial=1000.0, tasa_interes=0.03)
+corriente = CuentaCorriente(titular="Mishell C. Sarango ", numero="002", saldo_inicial=800.0, costo_mantenimiento=2.50)
 
 banco.agregar_cuenta(ahorro)
 banco.agregar_cuenta(corriente)
